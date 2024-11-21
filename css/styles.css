@@ -267,3 +267,12 @@ h3 {
     font-size: 16px;
     padding: 7px;
 }
+
+.user-icon i {
+    color: #046E8F;
+    font-size: 20px;
+}
+
+.nueva-nota-invisible {
+    display: none;
+}
