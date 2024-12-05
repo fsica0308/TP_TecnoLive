@@ -365,14 +365,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="nota-box">
                     <div class="nota-img">
                         <a href="#">
-                            <img src="${nota.imagen}" alt="${nota.alt}">
+                            <img src="${nota.imgSrc}" alt="${nota.imgAlt}">
                         </a>
                     </div>
                     <div class="nota-texto">
-                        <span>${nota.fecha} | ${nota.marca}</span>
-                        <a href="#" class="nota-titulo"><h2>${nota.titulo}</h2></a>
-                        <p>${nota.descripcion}</p>
-                        <p class="fulldescription">${nota.descripcioncompleta}</p>
+                        <span>${nota.date} | ${nota.brand}</span>
+                        <a href="#" class="nota-titulo"><h2>${nota.title}</h2></a>
+                        <p>${nota.description}</p>
+                        <p class="fulldescription">${nota.fulldescription}</p>
                         <a href="#" class="leer-mas" data-index="${index}">Leer más</a>
                     </div>
                 </div>

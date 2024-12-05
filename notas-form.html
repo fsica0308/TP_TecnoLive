@@ -11,23 +11,66 @@
 
 </head>
 <body>
+    <!--
     <form id="nota-form">
-        <label for="titulo">Título:</label>
+        <label for="titulo">TITULO</label>
         <input type="text" id="titulo" name="titulo" required><br><br>
         
-        <label for="descripcion">Descripción:</label>
+        <label for="descripcion">DESCRIPCION</label>
         <textarea id="descripcion" name="descripcion" required></textarea><br><br>
 
-        <label for="marca">Marca:</label>
+        <label for="descripcioncompleta">DESCRIPCION COMPLETA</label>
+        <textarea id="descripcioncompleta" name="descripcioncompleta" required></textarea><br><br>
+
+        <label for="marca">MARCA</label>
         <input type="text" id="marca" name="marca" required><br><br>
         
-        <label for="imagen">URL de Imagen:</label>
+        <label for="imagen">URL DE IMAGEN</label>
         <input type="text" id="imagen" name="imagen" required><br><br>
         
-        <label for="alt">Descripción de Imagen:</label>
+        <label for="alt">DESCRIPCION DE LA IMAGEN</label>
         <input type="text" id="alt" name="alt" required><br><br>
         
-        <button type="submit">Crear Nota</button>
+        <button type="submit">CREAR NOTA</button>
+    </form>
+    -->
+
+    <form id="nota-form">
+        <div class="titulo-marca">
+            <div>
+                <label for="titulo">TITULO</label>
+                <input type="text" id="titulo" name="titulo" required><br><br>
+            </div>
+            <div>
+                <label for="marca">MARCA</label>
+                <input type="text" id="marca" name="marca" required><br><br>
+            </div>
+        </div>
+
+        <div class="descripcion">
+            <label for="descripcion">DESCRIPCION</label>
+            <textarea id="descripcion" name="descripcion" required></textarea><br><br>        
+        </div>
+
+        <div class="descripcion-completa">
+            <label for="descripcioncompleta">DESCRIPCION COMPLETA</label>
+            <textarea id="descripcioncompleta" name="descripcioncompleta" required></textarea><br><br>
+        </div>
+
+        <div class="url-img">
+            <div>
+                <label for="imagen">URL DE IMAGEN</label>
+                <input type="text" id="imagen" name="imagen" required><br><br>
+            </div>
+            <div>
+                <label for="alt">DESCRIPCION DE LA IMAGEN</label>
+                <input type="text" id="alt" name="alt" required><br><br>
+            </div>
+        </div>
+        <div>
+            <button class="boton-atras" onclick="history.back()">REGRESAR</button>
+            <button type="submit">CREAR NOTA</button>
+        </div>
     </form>
 
     <script src="nota-form.js"></script>
