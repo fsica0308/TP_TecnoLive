@@ -5,19 +5,21 @@ document.addEventListener('DOMContentLoaded', () => {
         notaForm.addEventListener('submit', (e) => {
             e.preventDefault();
 
-            const titulo = document.getElementById('titulo').value;
-            const descripcion = document.getElementById('descripcion').value;
-            const marca = document.getElementById('marca').value;
-            const imagen = document.getElementById('imagen').value;
-            const alt = document.getElementById('alt').value;
+            const title = document.getElementById('titulo').value;
+            const description = document.getElementById('descripcion').value;
+            const fulldescription = document.getElementById('descripcioncompleta').value;
+            const brand = document.getElementById('marca').value;
+            const imgSrc = document.getElementById('imagen').value;
+            const imgAlt = document.getElementById('alt').value;
 
             const nuevaNota = {
-                titulo,
-                descripcion,
-                imagen,
-                alt,
-                fecha: new Date().toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }),
-                marca
+                title,
+                description,
+                fulldescription,
+                imgSrc,
+                imgAlt,
+                date: new Date().toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }),
+                brand
             };
 
             // Obtener notas existentes del localStorage

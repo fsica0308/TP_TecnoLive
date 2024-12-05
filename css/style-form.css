@@ -34,7 +34,7 @@ form .title {
 form label {
     margin-bottom: 30px;
     color: #fff; 
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -47,7 +47,7 @@ form label textarea {
     border-radius: 8px; 
     border: 1px solid #0090C1; 
     padding: 10px 5px;
-    font-size: 18px;
+    font-size: 30px;
 }
 
 form label input::placeholder, 
@@ -68,4 +68,43 @@ form button {
     cursor: pointer;
     font-size: 20px;
     border-radius: 8px; 
+}
+
+#nota-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-marca{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.titulo-marca div {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+}
+
+.descripcion-completa{
+    display: flex;
+    flex-direction: column;
+}
+
+.url-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.url-img div {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
 }
