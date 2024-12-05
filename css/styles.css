@@ -132,6 +132,10 @@ ul {
     font-size: 0.9rem;   
 }
 
+.fulldescription { 
+    display: none;
+}
+
 .nota-texto .nota-titulo {
     font-size: 1.3rem;
     font-weight: 500;
@@ -275,4 +279,56 @@ h3 {
 
 .nueva-nota-invisible {
     display: none;
+}
+
+#modalbox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 450px;
+    text-align: center;
+    padding: 80px 60px;
+    font-size: 18px;
+    font-weight: 500px;
+    background: #B3BFB8;
+    border-radius: 8px;
+}
+
+.cookies {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.cookies-visibles {
+    display: block;
+}
+
+.cookies-ocultas {
+    display: none;
+}
+
+#modalbox button {
+    background: #0090C1;
+    color: #fff;
+    padding: 15px 0;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    margin-top: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.close-cookies {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
 }
